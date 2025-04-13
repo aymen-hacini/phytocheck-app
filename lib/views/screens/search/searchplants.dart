@@ -56,7 +56,7 @@ class Searchplants extends GetView<Searchcontroller> {
                                     alignment: PlaceholderAlignment.baseline,
                                     baseline: TextBaseline.alphabetic,
                                     child: Text(
-                                      "La Plante",
+                                      "une plante",
                                       style: TextStyle(
                                           height: .1,
                                           fontSize: 27,

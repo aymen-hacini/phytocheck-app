@@ -199,7 +199,7 @@ class MyProfile extends GetView<Profilecontroller> {
                                         ],
                                       ),
                                     )
-                                  : controller.selectedRole.value == "Patient"
+                                  : controller.selectedRole.value == "Non professionnel de santé"
                                       ? Padding(
                                           padding: EdgeInsets.symmetric(
                                               horizontal:
@@ -336,7 +336,7 @@ class MyProfile extends GetView<Profilecontroller> {
                                           text: "Soumettre",
                                           onpress: () {
                                             controller.selectedRole.value ==
-                                                    "Patient"
+                                                    "Non professionnel de santé"
                                                 ? homepagecontroller
                                                     .changeProfessional(false)
                                                 : controller.selectedRole

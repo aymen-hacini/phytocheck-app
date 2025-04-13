@@ -389,7 +389,7 @@ class ProfileTab extends GetView<Homepagecontroller> {
                                 () => controller.isProfessional.value
                                     ? GradientBtn(
                                         gradient: Appcolors.primaryGradient,
-                                        text: "Ajouter une Declaration",
+                                        text: "Ajouter une declaration",
                                         onpress:
                                             () => Get.bottomSheet(Container(
                                                   padding:
@@ -431,9 +431,9 @@ class ProfileTab extends GetView<Homepagecontroller> {
                                                                   .declarationPlant,
                                                               decoration: InputDecoration(
                                                                   hintText:
-                                                                      "Nom de la plante",
+                                                                      "Entrer le nom de la plante",
                                                                   labelText:
-                                                                      "la plante",
+                                                                      "Nom de la plante",
                                                                   enabledBorder: OutlineInputBorder(
                                                                       borderRadius:
                                                                           BorderRadius.circular(
@@ -449,6 +449,7 @@ class ProfileTab extends GetView<Homepagecontroller> {
                                                                           BorderRadius.circular(
                                                                               20))),
                                                             ),
+                                                              
                                                             SizedBox(
                                                               height: constraints
                                                                       .maxHeight *
@@ -461,7 +462,7 @@ class ProfileTab extends GetView<Homepagecontroller> {
                                                                   hintText:
                                                                       "Ex: Partie Utilise (racine,tige...), Mode D'utilisation (Infusion/Decoction/Extrait sec), Raison D'utilisation , Periode d'utilisation ( Avant/Apres/Durant treatment)",
                                                                   labelText:
-                                                                      "La Plante Description",
+                                                                      "Description du cas",
                                                                   floatingLabelAlignment:
                                                                       FloatingLabelAlignment
                                                                           .start,
@@ -495,7 +496,7 @@ class ProfileTab extends GetView<Homepagecontroller> {
                                                                   hintText:
                                                                       "Ex : Antecedents, Age, Symptomes, TRT, Posologie ...",
                                                                   labelText:
-                                                                      "Description du cas ou patient",
+                                                                      "Antecedents du patient",
                                                                   alignLabelWithHint:
                                                                       true,
                                                                   enabledBorder: OutlineInputBorder(
@@ -514,6 +515,8 @@ class ProfileTab extends GetView<Homepagecontroller> {
                                                                               20))),
                                                               maxLines: 4,
                                                             ),
+                                                            
+                                                            
                                                           ],
                                                         ),
                                                       ),

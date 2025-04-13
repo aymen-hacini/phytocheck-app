@@ -140,7 +140,7 @@ class PlantDetails extends GetView<Homepagecontroller> {
                                                     const RoundedRectangleBorder(
                                                         side: BorderSide.none),
                                                 title: const Text(
-                                                  'Plant Monographie',
+                                                  'Monographie de la plante',
                                                   style: TextStyle(
                                                       fontSize: 18,
                                                       fontWeight:
