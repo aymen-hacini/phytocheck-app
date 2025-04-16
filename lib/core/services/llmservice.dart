@@ -16,6 +16,12 @@ class LLMService {
       ]
     };
     try {
+      _dio.interceptors.add(LogInterceptor(
+        request: true,
+        responseBody: true,
+        requestBody: true,
+        responseHeader: true,
+      ));
       final response = await _dio.post(
         _apiUrl,
         options: Options(
@@ -38,8 +44,8 @@ class LLMService {
         print(response.data);
         throw Exception('Failed: ${response.data}');
       }
-    } catch (e) {
-      throw Exception('Dio error: $e');
+    } on DioException catch (e) {
+      throw Exception('Dio error: ${e.message}');
     }
   }
 }

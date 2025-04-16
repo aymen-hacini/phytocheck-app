@@ -367,7 +367,7 @@ class ProfileTab extends GetView<Homepagecontroller> {
                               ),
                               ListTile(
                                 onTap: () {
-                                  dialPhoneNumber("+213666873135");
+                                  sendEmail("phytocheck.dz@gmail.com");
                                 },
                                 leading: SvgPicture.asset(AppImages.center),
                                 title: const Text(
@@ -449,7 +449,6 @@ class ProfileTab extends GetView<Homepagecontroller> {
                                                                           BorderRadius.circular(
                                                                               20))),
                                                             ),
-                                                              
                                                             SizedBox(
                                                               height: constraints
                                                                       .maxHeight *
@@ -515,8 +514,6 @@ class ProfileTab extends GetView<Homepagecontroller> {
                                                                               20))),
                                                               maxLines: 4,
                                                             ),
-                                                            
-                                                            
                                                           ],
                                                         ),
                                                       ),
@@ -655,11 +652,102 @@ class ProfileTab extends GetView<Homepagecontroller> {
                                                                   .feedbackText
                                                                   .clear();
                                                             }),
-                                                  )
+                                                  ),
                                                 ],
                                               ),
                                             ))),
-                              )
+                              ),
+                              SizedBox(
+                                height: constraints.maxHeight * .02,
+                              ),
+                              Obx(() => controller.isProfessional.value
+                                  ? GradientBtn(
+                                      gradient: Appcolors.primaryGradient,
+                                      text: "Ajouter un rapport de Feedback",
+                                      onpress: () => Get.bottomSheet(Container(
+                                            padding: const EdgeInsets.all(16),
+                                            height: constraints.maxHeight * .6,
+                                            width: constraints.maxWidth,
+                                            decoration: const ShapeDecoration(
+                                                color: Colors.white,
+                                                shape: RoundedRectangleBorder(
+                                                    borderRadius:
+                                                        BorderRadius.only(
+                                                            topRight: Radius
+                                                                .circular(32),
+                                                            topLeft:
+                                                                Radius.circular(
+                                                                    32)))),
+                                            child: Column(
+                                              children: [
+                                                const GradientText(
+                                                    text: "Votre Feedback",
+                                                    style: TextStyle(
+                                                        fontSize: 28,
+                                                        fontWeight:
+                                                            FontWeight.normal,
+                                                        letterSpacing: 1.2),
+                                                    gradient: Appcolors
+                                                        .primaryGradient),
+                                                TextField(
+                                                  controller:
+                                                      controller.feedbackText,
+                                                  decoration: InputDecoration(
+                                                      hintText: "...",
+                                                      enabledBorder:
+                                                          const OutlineInputBorder(
+                                                              borderSide:
+                                                                  BorderSide
+                                                                      .none),
+                                                      focusedBorder: OutlineInputBorder(
+                                                          borderSide:
+                                                              const BorderSide(
+                                                                  color: Appcolors
+                                                                      .primaryColor),
+                                                          borderRadius:
+                                                              BorderRadius
+                                                                  .circular(
+                                                                      20))),
+                                                  maxLines: 8,
+                                                ),
+                                                SizedBox(
+                                                  height:
+                                                      constraints.maxHeight *
+                                                          .04,
+                                                ),
+                                                Obx(
+                                                  () => controller
+                                                          .isLoading.value
+                                                      ? const Center(
+                                                          child:
+                                                              CircularProgressIndicator(
+                                                            color: Appcolors
+                                                                .primaryColor,
+                                                          ),
+                                                        )
+                                                      : GradientBtn(
+                                                          gradient: Appcolors
+                                                              .primaryGradient,
+                                                          text:
+                                                              "Envoyer votre Feedback",
+                                                          onpress: () {
+                                                            controller
+                                                                .addFeedback({
+                                                              "Feedback":
+                                                                  controller
+                                                                      .feedbackText
+                                                                      .text
+                                                                      .trim()
+                                                            });
+                                                            controller
+                                                                .feedbackText
+                                                                .clear();
+                                                          }),
+                                                ),
+                                              ],
+                                            ),
+                                          )))
+                                  : const SizedBox.shrink())
                             ],
                           ),
                         ),
@@ -670,11 +758,15 @@ class ProfileTab extends GetView<Homepagecontroller> {
   }
 }
 
-void dialPhoneNumber(String phoneNumber) async {
-  final Uri phoneUri = Uri(scheme: 'tel', path: phoneNumber);
-  if (await canLaunchUrl(phoneUri)) {
-    await launchUrl(phoneUri);
+void sendEmail(String emailAddress) async {
+  final Uri emailUri =
+      Uri(scheme: 'mailto', path: emailAddress, queryParameters: {
+    'subject': 'Contact',
+  });
+
+  if (await canLaunchUrl(emailUri)) {
+    await launchUrl(emailUri);
   } else {
-    throw 'Could not launch $phoneUri';
+    throw 'Could not launch $emailUri';
   }
 }

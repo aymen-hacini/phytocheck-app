@@ -40,7 +40,7 @@ class MyProfile extends GetView<Profilecontroller> {
                               ),
                               const Center(
                                 child: Text(
-                                  "Qu'est-ce que tu es ?",
+                                  "Votre profil utilisateur",
                                   style: TextStyle(
                                       fontSize: 18,
                                       fontWeight: FontWeight.w600),

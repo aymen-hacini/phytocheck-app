@@ -1418,7 +1418,7 @@ L'étude de la toxicité de Nigella sativa et de ses dérivés montre un très f
 Risque d'hépatotoxicité à fortes doses.
 '''),
   PlantModel(
-      plantname: "Romarin",
+      plantname: "Ginkgo",
       plantNameArab: "الجنكه بيلوبا",
       image: "assets/png/ginkgo.png",
       description:
@@ -1521,5 +1521,122 @@ Les symptômes bénins de toxicité incluent la fatigue, les crampes abdominales
 Une génotoxicité a été rapportée pour le baldrinal et l'homobaldrinal, produits de décomposition du valtrate et de l'isovaltrate. (23)
 Les effets des baldrinals sur les cellules hématopoïétiques in vitro indiquent une diminution de la fonction hépatique. (6)
 La valériane devrait être considérée comme un potentiel hépatotoxique, à prendre avec précaution et à éviter chez les patients souffrant de maladies hépatiques ou présentant des facteurs de risque. (24)
+'''),
+  PlantModel(
+      plantname: "Garance",
+      plantNameArab: "الفوة",
+      image: "assets/png/garance.png",
+      description:
+          '''La garance est une plante herbacée vivace aux tiges grimpantes et quadrangulaires, portant des feuilles vert foncé disposées en verticilles. Ses racines sont longues, ramifiées et de couleur brun-rouge à orangée. Les petites fleurs jaune verdâtre sont regroupées en cymes.
+ Partie utilisée 
+La racine est la principale partie utilisée de la plante. (3)
+Composition chimique 
+Composés phénoliques : eugénol, anéthole
+Anthraquinones : munjistine, rubérythrique acide (ruberythric acid), lucididine, rubiadine, pseudopurpurine, nordamnacanthal, 1-hydroxy-2-hydroxyméthylanthraquinone, mollugine
+Flavonoïdes : quercétine, rutine, kaempférol, hespéridine, naringénine-7-O-glucoside
+Acides organiques : acide citrique
+Tanins : abondants dans la partie aérienne. (4)
+Acides gras et dérivés  : acide linoléique, ester de l’acide oléique. (5)
+ Propriétés et usage 
+5.1    Usage traditionnel 
+Utilisée traditionnellement pour la production de teintures rouges vives. (6)
+5.2    Propriétés thérapeutiques 
+5.2.1    Activité antioxydante et anticancéreuse : 
+La Rubia tinctorum L. contient des composés actifs pour prévenir les maladies liées au stress oxydatif principalement dans ses parties aériennes. (4)
+Elle possède un effet antioxydant et peut inhiber les cellules cancéreuses à faible concentration, tout en restant non toxique pour les cellules normales à des doses équivalentes. (7)
+5.2.2    Activité antihémolytique
+La racine de Rubia tinctorum L. présente un potentiel élevé pour l'activité antihémolytique. (4)
+5.2.3    Activité antidiarrhéique 
+L'extrait de Rubia tinctorum présente des effets antidiarrhéiques significatifs dans un modèle animal, de manière dose-dépendante, pouvant surpasser ceux du lopéramide. (8)
+Il inhibe également le transit gastro-intestinal, probablement par un effet antispasmodique. (8) 
+5.2.4    Activité contre la lithiase urinaire
+L’extrait de Rubia tinctorum prévient efficacement la formation de calculs rénaux. (9)
+5.2.5    Activités métaboliques
+Grâce à ses propriétés antioxydantes, anti-inflammatoires et inhibitrices de l'alpha-amylase, la garance : 
+Réduit le poids corporel et améliore le profil lipidique.
+Normalise l'hyperglycémie, la résistance à l'insuline et l'hyperinsulinémie.
+Améliore la structure et la fonction du tissu hépatique.
+possède des  propriétés antioxydantes, anti-inflammatoires et inhibitrices de l'alpha-amylase. (10)
+Contre-indications
+Pas de données disponibles concernant les contre-indications de Rubia tinctorum après revue de la littérature.
+Effets indésirables et toxicité
+Les effets toxiques de Rubia tinctorum ont été étudiés dans un modèle animal, révélant plusieurs altérations biologiques à fortes doses et en cas d’exposition chronique.
+7.1 Effets hématologiques
+Des modifications légères ont été observées :
+Diminution des globules rouges, de l’hémoglobine et de l’hématocrite.
+Modifications des taux de plaquettes et de globules blancs.
+7.2 Toxicité hépatique
+La toxicité hépatique observée est légère et réversible.
+Augmentation mineure du poids relatif du foie.
+Fluctuations biochimiques observées :
+Protéines totales et bilirubine conjuguée : augmentations légères et dose-dépendantes.
+Rapport albumine/globuline : Légère diminution due à une augmentation des globulines.
+Albumine : augmentation modérée chez les mâles, stable chez les femelles.
+Calcium et phosphore inorganique : légères augmentations dose-dépendantes.
+Sodium et chlore : fluctuations mineures sans toxicité apparente.
+7.3 Toxicité rénale
+Présence de lésions tubulaires rénales dès de faibles doses :
+Dégénérescence vacuolaire.
+Caryomégalie (augmentation de la taille des noyaux cellulaires).
+Ces lésions pourraient être associées à un risque accru de carcinogenèse rénale.
+7.4 Carcinogenèse
+Le risque de cancer du foie et des reins est faible.
+Toutefois, certaines anthraquinones (lucidine et rubiadine) présentes dans Rubia tinctorum sont mutagènes, ce qui pourrait augmenter le risque à long terme.
+7.5. Effets secondaires mineurs
+Des fluctuations des niveaux de calcium, phosphore, sodium et chlore ont été observées, mais leur pertinence toxicologique est jugée faible.
+(11–13)
+'''),
+  PlantModel(
+      plantname: "Fenouil",
+      plantNameArab: "الشمر الحلو, النافع",
+      image: "assets/png/fenouil.png",
+      description:
+          '''Le fenouil (Foeniculum vulgare Miller, Fam. Apiaceae) est une plante bisannuelle à vivace, glabre, vert bleuté, à l’odeur épicée. Sa tige est dressée, lisse et contient du latex. Ses ombelles larges portent de petites fleurs aux pétales jaunes vifs. Les fruits, glabres, brunâtres ou gris-vert, cylindriques (6-10 mm), présentent des nervures émoussées et sont fortement bombés. (2–4)
+Partie utilisée 
+Fruits séchés et mûrs de Foeniculum vulgare Miller. (2,3)
+
+
+
+
+Composition chimique 
+Phénylpropanoïdes : trans-anéthole (50-90 %), estragole .
+Monoterpènes et dérivés : 	fenchone , α-pinène, β-pinène, limonène, camphène, p-cymène, myrcène, α- et β-Phellandrène, octatriène, carène, sabinène, γ-terpinène, terpinolène, terpinols, cis-ocimène, acétate de fenchyle.
+Coumarines et furocoumarines : apiol, ombelliférone, scopolétine, osthénol, scoparine, bergaptène, columbianétine, psoralène, xanthotoxine.
+Flavonoïdes : divers flavonoïdes non précisés.
+Autres composés : glycosides hydrosolubles de monoterpènes, composés alkyles et aromatiques, huile grasse.
+(2–5)
+Remarque 
+Teneurs réglementées  : la limite maximale d’estragole est de 5%. (3)
+Propriétés et usage
+5.1    Usage traditionnel
+Troubles digestifs, y compris les troubles dyspeptiques, les spasmes gastro-intestinaux légers, la sensation de plénitude, les ballonnements, les flatulences, les vomissements et la diarrhée.
+Catarrhe des voies respiratoires supérieures, notamment sous forme de sirop et de miel chez l’enfant, ainsi que pour la bronchite et la toux chronique.
+Calculs rénaux grâce à ses propriétés diurétiques.
+Utilisé pour la dysménorrhée et comme galactagogue.
+(2–4, 6, 7)
+5.2    Propriétés thérapeutiques
+ 5.2.1    Activité antimicrobienne
+L'huile essentielle de Foeniculum vulgare présente une excellente activité antimicrobienne contre les bactéries Gram-positives et Gram-négatives. Elle a démontré une activité antibactérienne notable contre Escherichia coli, Bacillus megaterium, Staphylococcus aureus, E. coli O157:H7 et Listeria monocytogenes. (2)
+5.2.2    Activité antispasmodique
+La fenchone, un composé présent dans le fenouil, exerce une activité antispasmodique démontrée sur un modèle animal. Cet effet serait médié par plusieurs mécanismes, notamment l’activation de divers types de canaux potassiques (K⁺), ainsi qu’une double inhibition des phosphodiestérases (PDE) et des canaux calciques (Ca²⁺). (8)
+
+
+5.2.3     Activité antioxydante
+Le fenouil possède une activité antioxydante notable, principalement via ses extraits éthanolique et méthanolique, qui montrent une forte capacité à piéger les radicaux libres et un bon pouvoir réducteur. Ces propriétés soutiennent son usage traditionnel et son potentiel en prévention des maladies chroniques telles que le diabète, l’obésité, l’hyperlipidémie, les cancers et les maladies neurodégénératives. (9)
+5.2.4    Activité œstrogénique
+Le fenouil est riche en phytoestrogènes qui présentent une affinité pour les récepteurs œstrogéniques et sont capables de moduler l’activité hormonale. Son extrait peut augmenter les concentrations sériques de l’hormone folliculo-stimulante (FSH). (10)
+Contre-indications
+Les personnes sensibles à l'anéthol doivent éviter l'utilisation du fenouil. (2)
+Autres préparations : contre-indiquées chez la femme enceinte. (3)
+Préparations autres que les infusions et la plante elle-même :
+Grossesse  : ne pas administrer.
+Enfants en bas âge : ne pas administrer. (4)
+Effets indésirables et toxicité 
+Un cas isolé de réaction allergique au fenouil a été rapporté. (2)
+Rares cas de dermatite de contact causée par des préparations contenant de l'anéthol. (2)
+Aucun effet toxique rapporté en cas de surdosage. (2)
+Réactions allergiques cutanées et respiratoires (cas isolés). (3)
+Réactions allergiques rares. (4)
+Sensibilité croisée possible chez les patients allergiques au céleri. (4)
 '''),
 ];
